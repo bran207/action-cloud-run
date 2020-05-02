@@ -2,6 +2,9 @@
 
 set -e
 
+cd "$INPUT_IMAGE_DIR"
+ls
+
 echo "$INPUT_SERVICE_KEY" | base64 --decode > "$HOME"/gcloud.json
 
 if [ "$INPUT_ENV" ]
