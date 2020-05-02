@@ -20,6 +20,9 @@ inputs:
   service key:
     description: 'GCP service key with storage and run permissions'
     required: true
+  image dir:
+    description: 'The path to the docker image'
+    required: true
 runs:
   using: 'docker'
   image: 'Dockerfile'
