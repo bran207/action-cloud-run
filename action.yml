@@ -17,6 +17,9 @@ inputs:
   region:
     description: 'GCP region'
     required: true
+  service account:
+      description: 'Service account for the Cloud Run instance to use'
+      required: true
   service key:
     description: 'GCP service key with storage and run permissions'
     required: true

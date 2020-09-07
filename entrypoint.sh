@@ -25,6 +25,7 @@ docker build --tag "$INPUT_IMAGE" .
 docker push "$INPUT_IMAGE"
 
 gcloud beta run deploy "$INPUT_SERVICE" \
+  --service-account "$INPUT_SERVICE_ACCOUNT" \
   --image "$INPUT_IMAGE" \
   --region "$INPUT_REGION" \
   --platform managed \
