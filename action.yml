@@ -26,6 +26,9 @@ inputs:
   image dir:
     description: 'The path to the docker image'
     required: true
+  env:
+    description: 'Enviorment File'
+    required: false
 runs:
   using: 'docker'
   image: 'Dockerfile'
